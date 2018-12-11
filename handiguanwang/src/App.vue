@@ -1,23 +1,25 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+    <div id="app">
+        <Header></Header>
+        <Home></Home>
+        <Footer></Footer>
+    </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+    import header from '@/components/comm/header';
+    import footer from '@/components/comm/footer';
+    import home from '@/components/pages/home';
+    export default {
+        name: 'App',
+        components:{
+            Header:header,
+            Home:home,
+            Footer:footer
+        }
+    }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="less">
+    @import "../static/css/comm.less";
 </style>

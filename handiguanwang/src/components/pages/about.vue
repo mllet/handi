@@ -1,10 +1,10 @@
 <template>
-    $END$
+    <div>关于</div>
 </template>
 
 <script>
     export default {
-        name: "about"
+        name: "About"
     }
 </script>
 
